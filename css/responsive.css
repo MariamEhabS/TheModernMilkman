@@ -280,6 +280,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
     .advCont{
         width: 60%;
     }
@@ -295,7 +296,11 @@
 
 @media screen and (max-width: 700px) {
     .navbar-brand{
+        
         margin-left: 35% !important;
+    }
+    .banner{
+        background-position: 60% 0%;
     }
 
 }

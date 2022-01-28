@@ -445,7 +445,7 @@ input:-webkit-autofill:focus {
     background-image: url('images/milkmanimg.jpg');
     background-position: center bottom;
     /* min-height: 550px; */
-    height: 65%;
+    height: 70% !important;
     width: 100%;
     background-size:cover;
 
@@ -453,6 +453,7 @@ input:-webkit-autofill:focus {
 
     
 }
+
 .homeSect{
     margin-top: 5%;
     margin-left: 0px;
