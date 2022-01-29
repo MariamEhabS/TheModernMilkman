@@ -186,7 +186,8 @@ function surveryStarter() {
     document.querySelector('.home-area').style.display = 'none'
     document.querySelector('.howItWorks').style.display = 'none'
     document.querySelector('.imgSection').style.display = 'none'
-    document.querySelector('.footPart').style.display = 'none'   
+    document.querySelector('.footPart').style.display = 'none'  
+    document.querySelector('.interestedSect').style.display = 'none'  
 }
 
 function dietOptions() {
