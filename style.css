@@ -475,8 +475,9 @@ input:-webkit-autofill:focus {
 }
 
 .homeSect h2{
-    line-height: 4rem;
-    font-size: 4em;
+    margin-top: 40%;
+    line-height: 6rem;
+    font-size: 6em;
 }
 
 /*-- how it works section --*/
