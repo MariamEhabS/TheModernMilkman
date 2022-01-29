@@ -338,6 +338,12 @@
 }
 }
 
+@media screen and (max-width: 400px){
+    .banner h2{
+        font-size: 4em;
+    }
+}
+
 @media screen and (max-width: 300px) {
     .navbar-brand{
         margin-left: 15% !important;
