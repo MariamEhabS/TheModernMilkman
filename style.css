@@ -46,6 +46,12 @@ CSS INDEX
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: 'Mohr Rounded Bold';
+	src:url('./fonts/Mohr\ Font\ Family_Latinotype\ -\ Mohr\ Rounded\ Bold.otf');
+	font-weight: normal;
+}
+
 /*-------------------
 2. Theme Default CSS
 --------------------*/
@@ -489,6 +495,14 @@ input:-webkit-autofill:focus {
 
 }
 
+.howItWorks h2{
+    text-align: center;
+}
+
+/* .bottle.rightSide img{
+    width: 30%;
+} */
+
 .advCont{
     display: flex;
     width: 50%;
@@ -564,14 +578,8 @@ input:-webkit-autofill:focus {
     font-size: 20px;
     line-height: 72px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: rgb(72, 44, 191);
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #73ebd1;
+
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     overflow: hidden;
     z-index: 1;
@@ -623,7 +631,7 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -788,9 +796,7 @@ input:-webkit-autofill:focus {
    font-size: 2.5rem;
  }
  
- .interestedSect{
-     display: none;
- }
+
  .q0{
    display: block;
  }
@@ -829,16 +835,23 @@ input:-webkit-autofill:focus {
  .q4{
    display: none;
    background: #3e5367;
+   color: white;
    padding-top: 3%;
    padding-bottom: 3%;
    margin-bottom: 3%;
    border-radius: 2em;
  }
+
+ .congrats{
+    color: #79c9f2;
+ }
  .nextPage{
    display: none;
  }
  #submitButton{
-   display: none;
+    font-size: 18px;
+    font-family: 'Mohr Rounded Bold';
+    display: none;
  }
  
  .questionArrow{
@@ -851,7 +864,7 @@ input:-webkit-autofill:focus {
  .optionBtn{
      /* background: #73ebd1;
      width: 85%; */
-
+     font-family: 'Mohr Rounded Bold';
      bottom: 5vw;
      margin: 0 auto ;
      border: none;
@@ -864,6 +877,7 @@ input:-webkit-autofill:focus {
  }
 
  #submitButton, #postCodeCheck {
+    font-family: 'Mohr Rounded Bold' !important;
     bottom: 5vw;
     margin: 0 auto ;
     border: none;
@@ -877,6 +891,8 @@ input:-webkit-autofill:focus {
 
  .startSurv,  .getStarted{
     /* bottom: 5vw; */
+    font-family: 'Mohr Rounded Bold';
+    font-size: 12px;
     text-align: center;
     border: none;
     color: #3e5367;
@@ -998,6 +1014,11 @@ input:-webkit-autofill:focus {
     color: #5e88fc;
 }
 
+
+
+.footerImg{
+    width: 20%;
+}
 /*-- 19. ScrollUp-Button --*/
 
 #scrollUp {
