@@ -1018,6 +1018,19 @@ input:-webkit-autofill:focus {
 
 .footerImg{
     width: 20%;
+    margin-top: 10%; 
+}
+
+.footPart{
+    padding-top:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.footPart a{
+    margin-top: 5%;
 }
 /*-- 19. ScrollUp-Button --*/
 
