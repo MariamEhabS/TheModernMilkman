@@ -949,6 +949,14 @@ input:-webkit-autofill:focus {
         color: white;
     }
 
+    .checkBoxForm input{
+        margin-right: 2%;
+        border: none;
+        width:8%;
+        margin-top: 5%;
+        height: auto;
+    }
+
     /* .q1:focus{
      
     } */
