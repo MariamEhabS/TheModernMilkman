@@ -295,6 +295,10 @@
 .footerImg{
     width: 50%;
 }
+.navbar-brand{
+        
+    margin-left: 38% !important;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -304,6 +308,13 @@
     }
     .banner{
         background-position: 60% 0%;
+    }
+    #postCode{
+        width: 45% !important;
+        margin-bottom: 5%;
+    }
+    .homeSect h2{
+        margin-top: 40% !important;       
     }
 
 }
@@ -321,7 +332,8 @@
 
 @media screen and (max-width: 500px) {
     .navbar-brand{
-        margin-left: 25% !important;
+
+        margin-left: 28% !important;
     }
     .optionSections{ 
         width: 45%;
@@ -344,17 +356,43 @@
         width: 30% !important;
         /* margin-top: 20%;  */
     }
+    #postCode{
+        width: 65% !important;
+        margin-bottom: 5%;
+    }
+    .homeSect h2{
+        margin-top: 40% !important;       
+    }
+    .modal-content{
+        
+        padding-left: 10%;
+        padding-right: 10%;
+    } 
+    .modal-content h1{
+        font-size: 2em;
+    } 
+    .modal-content p, .modal-content span, .modal-content a {
+        font-size: 0.9em;
+    } 
+
 }
 
 @media screen and (max-width: 400px){
     .banner h2{
         font-size: 4em;
     }
+    .homeSect h2{
+        margin-top: 50% !important;       
+    }
+    .navbar-brand{
+      margin-left: 20% !important;
+    }
+
 }
 
 @media screen and (max-width: 300px) {
     .navbar-brand{
-        margin-left: 15% !important;
+        margin-left: 13% !important;
     }
     .optionSections{ 
         width: 45%;
@@ -375,5 +413,11 @@
     .advCont p{
         width: 90%;
     }
+    #postCode{
+        width: 65% !important;
+        margin-bottom: 5%;
+    }
+    .interestedSect button{
+        width: 85%;    }
 
 }
