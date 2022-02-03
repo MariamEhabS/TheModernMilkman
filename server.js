@@ -74,6 +74,6 @@ app.post('/', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(3000, () => {
   console.info(`Server running at http://localhost:8080. You better go catch it!`);
 });
