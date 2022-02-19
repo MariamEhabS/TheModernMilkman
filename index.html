@@ -10,9 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>The Modern Milkman</title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images\smallbottle.png" />
+    <!-- Place favicon.ico in the root directory  -->
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3017897195115808');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3017897195115808&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -23,6 +39,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="/images/smallbottlev1.png" type="image/ico" />
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 </head>
@@ -48,7 +65,8 @@
 
                 <div class="col-xs-12 col-md-7">
 
-                    <h2 class="wow fadeInUp" data-wow-delay="0.4s">Join our Milkround 50% OFF</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.4s">JOIN OUR MILKROUND AND GET 50% OFF </h2>
+
                     <div class="space-20"></div>
                     <div class="desc wow fadeInUp" data-wow-delay="0.6s">
                     </div>
@@ -58,6 +76,7 @@
         </div>
     </header>
     <!-- Home-Area-End -->
+    <!-- May 27 1997 -->
 
         <!-- Feature-Area -->
         <section class="gallery-area" id="features_page">
@@ -66,8 +85,8 @@
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <form data-aos="fade-up" id="survey" class="survey" action="" method="POST">
                             <div class="q0">
-                                <h3>Take this 2-question survey for 50% OFF your first two orders and the chance to get a FREE Grocery Package worth £50!</h3>
-                                    <button class="getStarted" id="yesCont"onclick="surveryStarter()">Get Started</button>                               
+                                <h3>Take this 2-question survey for 50% off your first two weeks and the chance to win a FREE Grocery Package worth £50!</h3>
+                                    <button type="button" class="getStarted" id="yesCont"onclick="surveryStarter()">Get Started</button>                               
                             </div>
                             <div class="q1"> 
                                 <h3>Would you rather…?</h3>
@@ -75,24 +94,25 @@
                                 <div class="q1Cont">
                                 <div class="optionSections">
                                     <h5>Use disposable plastic bottles that are harmful to the environment</h5>
-                                        <button class="optionBtn leftoptBtn" onclick="dietOptions()">Option 1</button>
+                                        <button type="button" class="optionBtn leftoptBtn" onclick="dietOptions()">Option 1</button>
                                 </div>
                                 <div class="optionSections">
                                     <h5>Use plastic free packaging and reusable glass bottles</h5>
-                                         <button class="optionBtn" onclick="dietOptions()">Option 2</button>
+                                         <button type="button" class="optionBtn" onclick="dietOptions()">Option 2</button>
                                 </div>
                             </div>
                             </div>
                             <div class="q2"> 
                                 <h3>Would you rather…?</h3>
+                                <img class="questionArrow" src="images/question-arrows.png" alt="">
                                 <div class="q1Cont">
                                      <div class="optionSections">
                                         <h5>Buy from massive supermarket chains</h5>
-                                        <button class="optionBtn"  onclick="dietGoal()">Option 1</button>
+                                        <button type="button" class="optionBtn"  onclick="dietGoal()">Option 1</button>
                                     </div>
                                     <div class="optionSections">
-                                        <h5>Buy from small, sustainable farms and local suppliers</h5>
-                                        <button class="optionBtn"  onclick="dietGoal()">Option 2</button>
+                                        <h5>Buy from small farms and independent suppliers</h5>
+                                        <button type="button" class="optionBtn"  onclick="dietGoal()">Option 2</button>
                                     </div>
                                 </div>
                             </div>
@@ -103,29 +123,31 @@
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-times-circle"></i>
                                 <button type="button" id="postCodeCheck">See if you qualify</button>
-                                <button class="nextPage" type="button" onclick="postalChecker()"><i class="fas fa-long-arrow-alt-right"></i></button>
+                                <button type="button" class="nextPage" type="button" onclick="postalChecker()"></button>
                             </div>	
                                 <div class="q4">
                                     <h2 class="congrats">CONGRATULATIONS!</h2>
                                     <h4>You qualify to enter the competition.</h4>
-                                    <p>Now, just leave your details below to enter the competition and claim your discounts.</p>
+                                    <p>Now, just give us your details below to enter the competition and get an instant 50% discount. And we'll ring you or email you with more information.</p>
                                     <div class="contactCont">
                                     <input name="Name" type="text" id="firstName" placeholder="First Name">
                                     <input name="Name2" type="text" id="lastName" placeholder="Last Name" required>
                                     <input name="email" type="email" id="email" placeholder="Email" required>
-                                    <input name="PhoneNum" type="tel" id="phone" placeholder="Phone Number" required>
+                                    <input name="PhoneNum" type="tel" id="phone" placeholder="Mobile ex.07XXXXXXXXX" onblur="phone_number()" required>
+                                    <span id="phoneNumInval">Invalid phone number. Please enter one of the following formats: 07XXXXXXXXX, 7XXXXXXXXX, 447XXXXXXXXX </span>
+
                                     <div class="checkBoxForm">                    
                                        
                                         <label for="contactMe" class="checking">
                                             <input required name="contactMe" id="contactMe" type="checkbox" class="checkBox">
                                             Yes, The Modern Milkman may contact me via phone.
-                                        </label>
-                                        
+                                        </label>  
                                         <label for="newsL" class="checking"> <input name="newsL"  id="newsL" type="checkbox" class="checkBox">Yes, I'd like to receive The Modern Milkman newsletter (optional).</label>
                                  </div>
                                 </div>
                                 </div>
-                                <button type="submit" id="submitButton"> <a href="/css/thankyou.html"></a>Submit</button>
+                                <button type="submit" id="submitButton" disabled><a href="/css/thankyou.html"></a>Submit</button>
+                                <!-- <button type="submit" id="submitButton">Submit</button> -->
                         </form>
     
                     </div>
@@ -138,27 +160,28 @@
 
     <!-- About-Area -->
     <section class="howItWorks">
-        <h2>Here’s How it Works:</h2>
+        <h2>Here’s how it works:</h2>
         <div class="advCont">
             <img src="images/icon-5.png" alt="Logo">
         <div class="advTmm desc wow fadeInUp" data-wow-delay="0.6s">
-            <p> Easily order online without having to go to the shops. Order before 8:00 pm, and your milkman/woman will deliver it to you early next morning.</p>
+            <p>Manage your orders on our app or website, any time of day or night, no need to go to the shops! You can add or remove items up to 8pm the night before your delivery days for delivery on your doorstep first thing in the morning.</p>
         </div>
         </div>
         <div class="rightSide advCont">
             <img src="images/icon-2.png" alt="Logo">
         <div class="advTmm desc wow fadeInUp" data-wow-delay="0.6s">
-            <p>We deliver your milk and groceries in recyclable and plastic free packaging, which you can return to us to wash and reuse.</p>
+            <p>Order from a range of farm-fresh groceries like milk, juice, eggs, butter, bread, fruit and vegetables, all delivered in plastic free packaging and returnable glass bottles.</p>
         </div>
         </div>
         <div class="advCont">
-            <img src="images/phonething.png" alt="Logo">
+            <img src="images/bottlething.png" alt="Logo">
         <div class="advTmm desc wow fadeInUp" data-wow-delay="0.6s">
-            <p>Your milkman/woman collects and replaces your empties with plastic free bottles of fresh, sustainably sourced milk as often as you like (up to 3 times a week).</p>
+            <p>Your milkies will collect your empties from your doorstep. Every bottle is washed and reused by the dairy up to 25 times, which saves plastic waste making it easy for you to do your part for the planet!
+            </p>
         </div>
         </div>
         <div class="bottle rightSide advCont">
-            <img src="images/bottlething.png" alt="Logo">
+            <img src="images/phonething.png" alt="Logo">
         <div class="advTmm desc wow fadeInUp" data-wow-delay="0.6s">
             <p>Easily and flexibly reorder, and cancel your orders whenever you like</p>
         </div>
@@ -172,13 +195,9 @@
     </section>
   
     <section class="interestedSect">
-        <h2>Want to Start 50% OFF?</h2>
-        <p>Find out if this is something for you
-            and try The Modern Milkman with
-            50% off the first 2 orders. Plus, you
-            will have the chance to win a FREE
-            grocery package worth £50!</p>
-            <button href="#features_page" class="startSurv bttn-white wow fadeInUp" data-wow-delay="0.8s">Get Started</button>
+        <h2>JOIN OUR MILKROUND AND GET 50% OFF</h2>
+        <p>30+ M plastic bottles saved, and counting! Start now with 50% off your first 2 orders and enjoy the convenience of getting farm-fresh groceries delivered to your door while reducing plastic waste. A win-win!</p>
+            <a href="#features_page" class="startSurv bttn-white wow fadeInUp" data-wow-delay="0.8s">Get Started</a>
     </section>
     <section class="imgSection">
         <img src="images\MM_milkies_084.jpg" alt="">
@@ -190,7 +209,7 @@
                     <div class="col-xs-12">
                         <div class="page-title text-center">
                             <h5 class="title">Testimonials</h5>
-                            <h3 class="dark-color">Our Clients Love Us</h3>
+                            <h3 class="dark-color">What our Happy Customers Have to Say</h3>
                             <div class="space-20"></div>
                         </div>
                     </div>
@@ -237,25 +256,730 @@
     <div class="subscribe-area">
         <div class="footPart container">
         <h2 class="footwow fadeInUp" data-wow-delay="0.4s">Join our Milkround 50% OFF</h2>
-        <button href="#survey" class="startSurv bttn-white wow fadeInUp" data-wow-delay="0.8s">Get Started</button>
+        <a href="#survey" class="startSurv bttn-white wow fadeInUp" data-wow-delay="0.8s"> Get Started</a>
 
         <img class="footerImg" src="images/Rebrand-Primary-Logo@3x.png" alt="" >
+        <!-- Trigger/Open The Modal -->         
+        <a id="myBtn">Privacy Notice</a>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>The Modern Milkman Privacy Notice</h1>
+            <div class="space-20"></div>
+            <div class="row">
+                <div class="content-inner-story">
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">The purpose of this notice</h4>
+                    <p>
+                        <span style="font-weight: 400;">This privacy notice explains how we will process your personal information obtained through your use of our website at </span>
+                        <a href="https://themodernmilkman.co.uk/"><span style="font-weight: 400;">https://themodernmilkman.co.uk/</span></a>
+                        <span style="font-weight: 400;">, your use of our “Modern Milkman” app, our supply of milkman services to you, and through other interactions with you (for example, networking events, and marketing activities). It also covers other situations where we process personal data that is not covered by other notices, such as in case of our corporate partners’ and sole traders’ contacts we work with.</span>
+                    </p>
+                    <p>
+                        <span style="font-weight: 400;">
+                        Through use of the Modern Milkman website and app, registered users can access our online grocery that allows users to make one off purchases or set up repeat weekly orders of Modern Milkman products, such as milk, fruit, juice, eggs, breakfasts, bakery, veg boxes and household items. Orders are delivered to our customers by our modern milkmen who service their area.&nbsp;
+                        </span>
+                    </p>
+                    <div id="top"></div>
+                    <p>
+                        <span style="font-weight: 400;">It is important that you read this privacy notice, together with any just in time privacy notices we may provide elsewhere on our website and app, so that you are fully aware of how and why we are using your data, and what data protection rights you have.
+                        </span>
+                    </p>
+                    <h4 class="global">What does this notice cover:</h4>
+                    <p>
+                        <span style="font-weight: 400;">You can either scroll down to read this notice in its entirety (which we recommend), or click on one of the links below to go straight to the section you are interested in.
+                        </span>
+                    </p>
+                    <ul style="padding-left: 20px;">
+                        <li style="font-weight: 400;"><a href="#a1"><strong>Who we are and how to contact us</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#b1"><strong>Data Protection Legislation</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#c1"><strong>The personal data we collect</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#d1"><strong>How we collect personal data</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#e1"><strong>How and why we use personal data</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#f1"><strong>Marketing</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#g1"><strong>Who we share personal data with</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#h1"><strong>How long we keep personal data</strong></a></li>
+                        <div id="a1"></div>
+                        <li style="font-weight: 400;"><a href="#i1"><strong>Your rights</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#j1"><strong>Keeping personal data secure</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#k1"><strong>Complaints</strong></a></li>
+                        <li style="font-weight: 400;"><a href="#l1"><strong>Changes to this privacy notice</strong></a></li>
+                    </ul>
+                    <h4 class="global">Who we are and how to contact us</h4>
+                    <p>
+                        <span style="font-weight: 400;">When we say </span><strong><i>we</i></strong><span style="font-weight: 400;">, </span><strong><i>us</i></strong><span style="font-weight: 400;"> or </span><strong><i>our</i></strong><span style="font-weight: 400;"> in this privacy notice, we mean Modern Milkman Ltd, a company incorporated and registered in England and Wales with company number 11639509 and whose registered office is at 13 New Market Street, Colne, Lancashire, BB8 9BJ.</span>
+                    </p>
+                    <p><span style="font-weight: 400;">For the purposes of the Data Protection Legislation, we are the </span><strong><i>controller</i></strong><span style="font-weight: 400;"> of your personal data. This means that we are responsible for deciding how we hold and use personal information about you.</span></p>
+                    <p><span style="font-weight: 400;">If you have any questions in regard to any part of this notice, (including any requests to exercise your legal rights) please contact our Data Protection Officer, Aphaia Ltd, by:</span></p>
+                    <ul>
+                        <li style="font-weight: 400;list-style-type: none;"><span style="font-weight: 400;">(a) email at </span><a href="mailto:dpo@aphaia.co.uk"><span style="font-weight: 400;">dpo@aphaia.co.uk</span></a><span style="font-weight: 400;">; or&nbsp;</span></li>
+                        <div id="b1"></div>
+                        <li style="font-weight: 400;list-style-type: none;"><span style="font-weight: 400;">(b) phone to 020 3917 4158; or&nbsp;</span></li>
+                        <li style="font-weight: 400;list-style-type: none;"><span style="font-weight: 400;">(c) post sent to the address above for the attention of the Data Protection Officer.&nbsp;</span></li>
+                    </ul>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Data Protection Legislation</h4>
+                    <p><span style="font-weight: 400;">We are committed to protecting your privacy and safeguarding your personal data. Our use of your personal data is subject to the data protection laws applicable in the United Kingdom, which on the date of the publication of this notice includes the EU General Data Protection Regulation, the UK Data Protection Act 2018 and other relevant UK and the UK GDPR (together </span><strong>Data Protection Legislation</strong><span style="font-weight: 400;">).</span></p>
+                    <div id="c1"></div>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">The personal data we collect</h4>
+                    <p><strong><i>Personal data</i></strong> <span style="font-weight: 400;">means information which relates to an identified or an identifiable individual.&nbsp;</span></p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><strong>Types of personal data we may collect</strong></p>
+                                </td>
+                                <td>
+                                    <p><strong>Examples</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Identity data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">name; title;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Contact data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">address; email; telephone number;&nbsp;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Financial and transactional data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">details of orders made and processed; details of payment received/made; details of invoices received/issued; details of cards used for payments;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Usage data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">products purchased and prices paid; how you use and navigate the app and website;&nbsp;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Communication data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">details of enquiries submitted by you through our website, app or emailed to us; information obtained through networking;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Advertising profile data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">assumptions about your predicted buying behaviour and interests based on the usage data we collect about you and combined with non-personal data we obtain from Experian’s Mosaic system. For further information, please see the </span><i><span style="font-weight: 400;">Marketing</span></i><span style="font-weight: 400;"> section of this Privacy Notice;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Technical data</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">your IP address; your general geographic location based on your IP address; the type of device you use and its operating system and version; your browser type; the pages you view on our website and how you interact with that content; advertising identifiers (such as those on mobile devices, tablets and streaming media devices that include such identifiers).</span></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><span style="font-weight: 400;">&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">We do not provide goods directly to children or proactively collect their personal data. If you believe that we have received information relating to or from persons under the age of 18 please contact us at </span><span style="font-weight: 400;"> </span><a href="mailto:dpo@aphaia.co.uk"><span style="font-weight: 400;">dpo@aphaia.co.uk</span></a><span style="font-weight: 400;">. If we become aware that a person under the age of 18 has provided us with personal information we will take steps to delete such information.</span></p>
+                    <p><strong>Anonymised data&nbsp;</strong></p>
+                    <div id="d1"></div>
+                    <p><span style="font-weight: 400;">We may also collect, use and share anonymised, aggregated data such as statistical or demographic data for any purpose. Anonymised data may be derived from your personal data but is not considered personal information in law as this information does not directly or indirectly reveal your identity. For example, we may aggregate information on how you use our website and/or app to calculate the percentage of users accessing a specific website and/or app feature.</span><span style="font-weight: 400;">&nbsp;</span></p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">How we collect personal data</h4>
+                    <p><span style="font-weight: 400;">We collect most of this information from you direct. However, we may also collect information from other sources.</span></p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><strong>Type of source</strong></p>
+                                </td>
+                                <td>
+                                    <p><strong>Examples</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Your use of our website, our app and services</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">when you sign up to create an account on our website and/or our app; when you use our services; when you place or amend an order for our services on our website or our app; when you submit an online enquiry; when you add or update your billing or address information.</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Direct interactions with you</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">when you first contact us (e.g. by phone or email); when you participate in our user research activities (e.g. provide us with feedback or respond to our questionnaires); when you network with us).</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Third parties</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">if you visit our service by clicking on our advertisement on social media or another website or app, the operator of that website or app may share information about you with us. For further details, please see the </span><i><span style="font-weight: 400;">Marketing</span></i><span style="font-weight: 400;"> section of this Privacy Notice.&nbsp;</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Automated technologies or interactions</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">as you interact with our website and advertisements, we may automatically collect technical data (as described in section </span><i><span style="font-weight: 400;">The personal data we collect </span></i><span style="font-weight: 400;">above). We collect this personal data by using cookies, server logs and other similar technologies. For further details, and to change or withdraw your consent to accept cookies, please see our Cookies Notice available at </span><a href="https://themodernmilkman.co.uk"><span style="font-weight: 400;">https://themodernmilkman.co.uk</span></a><span style="font-weight: 400;"> and click on the cookie icon at the bottom of the page and press show details.</span></p>
+                                    <div id="e1"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">How and why we use personal data</h4>
+                    <p><span style="font-weight: 400;">Under the Data Protection Legislation, we can only use your personal data if we have a proper reason for doing so, for example: consent, contact, legitimate interests, or legal obligation.</span></p>
+                    <ul style="padding-left: 20px;">
+                        <li style="list-style-type: none;"><strong><strong>1. Consent. </strong><span style="font-weight: 400;">We may process your data based on your consent for certain marketing purposes. Where your permission is required, we will ask you for such consent clearly and separately from the body of this Privacy Notice or our Terms and Conditions. You have the right to withdraw consent to marketing at any time. However, this will not affect the processing before your withdrawal of consent. For further information, please see the </span><i><span style="font-weight: 400;">Marketing</span></i><span style="font-weight: 400;"> section of this Privacy Notice.</span></strong></li>
+                        <p style="margin-bottom:0px;">&nbsp;</p>
+                        <li style="list-style-type: none;">
+                            <span style="font-weight: 400;"> </span><strong>2. Contract. </strong><span style="font-weight: 400;">We will use your personal data if we need to do it to perform our obligations under a contract with you, or if it is necessary for a contract which we are about to enter with you. For example, if we need to:</span>
+                            <ul>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">register you as a new customer or administer your account (e.g. set up your subscription and administer invoicing and payments);</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">provide our services to you;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">deliver your order to you;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">manage our relationship with you (e.g. to respond to your enquiries or to notify you about changes to our services and to inform you about updating preferences); and</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">provide you with customer services (e.g. technical support through our website and app’s support chat function).</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <ul style="padding-left: 20px;">
+                        <li style="list-style-type: none;">
+                            <strong>3. Legitimate interests. </strong><span style="font-weight: 400;">We may process your personal data when we (or third party) have a legitimate reason to use it, so long as this is not overridden by your own rights and interests. For example:</span>
+                            <ul>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to manage your account and our relationship with you (including responding to your enquiries);</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to manage payments, fees, charges, and to collect debts which you may owe to us;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to interact with you professionally (e.g. if you represent our current or prospective client, supplier or business partner) to manage our relationship with the organisation you represent;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to administer and protect our business and our website (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data);</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to deal with your enquiry unrelated to a contract which we may have with you;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to provide you with a free service (e.g. the use of our website and app functionalities);</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to ask you to leave a review or complete a survey;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to send you our blogs, newsletters or other electronic marketing communications if you are our existing customer;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to increase our business or promote our brand through delivering relevant website content and advertisements to you (including recommending new products and products that may be relevant to you);</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to measure or understand the effectiveness of the advertising we provide to you;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to improve our website, products, services, marketing, and customer relationships and understanding;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">to conduct web analytics;&nbsp;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">for the prevention and detection of fraud and spam; and</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">for the establishment, exercise or defence of legal claims.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <ul style="padding-left: 20px;">
+                        <li style="list-style-type: none;">
+                            <strong>4. Legal obligation. </strong><span style="font-weight: 400;">We may process your personal data to comply with our legal obligation. For example, to:</span>
+                            <ul>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">notify you about changes to our terms or privacy notice;</span></li>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">address your complaint; and</span></li>
+                                <div id="f1"></div>
+                                <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">comply with a request from a competent authority.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Marketing</h4>
+                    <p><span style="font-weight: 400;"><strong>Our marketing emails</strong></span></p>
+                    <p><span style="font-weight: 400;">We may send you emails about our products if you are our existing customer (on the basis of our legitimate interests) or, if you are our prospective customer when you expressly agree to that (for example, by signing up to our newsletter).&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">If you are our existing customer, we may use the information we have about you (such as what product you previously bought from us, where you live, how old you are, how you use our website and app) to make predictions on what other products may be of interest to you. We will use that information to make our marketing emails and offers relevant to you. This type of personal data use is called ‘profiling’. We will do that on the basis of our legitimate interests.&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">We may also use cookies and similar tracking technologies (for example tracking pixels in our marketing emails and website/app advertisements) and analytics services (such as Google Analytics) to collect information about your use of our website, app, services and your interactions with our marketing emails and advertisements. In addition, third party advertising platforms that we advertise our products on (for example, Facebook and Google) may also use their advertising cookies on our website. We will ask for your consent to the use of non-essential cookies, including third party cookies. You can find further information about the cookies used on our website and the purposes they are used for by going to </span><a href="https://themodernmilkman.co.uk"><span style="font-weight: 400;">https://themodernmilkman.co.uk</span></a><span style="font-weight: 400;"> and clicking on the cookie icon at the button of the page and press show details.</span></p>
+                    <p><span style="font-weight: 400;"><strong>Data from other providers</strong></span></p>
+                    <p><span style="font-weight: 400;">We use Mosaic to obtain additional non-personal information.</span><span style="font-weight: 400;"> </span><span style="font-weight: 400;">Mosaic is a service provided by Experian, the credit reference agency. Experian holds information on the majority of households in the UK. It uses that information to create models into the ‘make-up’ of the UK population for characteristics across age, gender, number of adults and composition of the household and length of residency. It then uses that information to segment households based on their postcodes into groups and assigns predicted buying interests and behaviours to those groups. We may use the postcode based information obtained from Mosaic and combine it with the information we have about you to make our marketing communication and offers more relevant to you. This type of personal data use is also called ‘profiling’. </span><span style="font-weight: 400;"></span><span style="font-weight: 400;">We will use your personal data in this way </span><span style="font-weight: 400;"></span><span style="font-weight: 400;">on the basis of our legitimate interests. </span><span style="font-weight: 400;">We will not share your personal information with Experian.</span></p>
+                    <p><span style="font-weight: 400;">If you click on our advertisement on social media (for example, Facebook) or a website or app or another provider (for example, Mention Me who run our ‘Refer a Friend’ programs), </span><span style="font-weight: 400;"></span><span style="font-weight: 400;">that provider will share with us information about you (the fact that you came to our website/app from their service.</span></p>
+                    <p><span style="font-weight: 400;"><strong>Third party advertising</strong></span></p>
+                    <p><span style="font-weight: 400;">We may share your name, email address</span><span style="font-weight: 400;">, </span><span style="font-weight: 400;">telephone number, and other information, such as whether you made any purchases with us and how much you spent, for our advertising purposes with social media platforms and other third party advertising providers (for example, Facebook and Google). The third party advertising provider will use that information to match it against the list of their own users. If the email address or telephone number we give them matches with their list, they will use it to show you our advertisements on their platform.&nbsp;&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">The third party advertising providers will also use that information to combine it with the information they hold on you (for example, your interests, likes, advertisements you previously clicked on) and match it with other </span><span style="font-weight: 400;"></span><span style="font-weight: 400;">users of their services who share similar characterises. They will then show our advertisements to those other people. The third party advertising providers will use your data and the other “look like’ users’ data in this way as data controllers on the basis of their terms and policies that govern their users’ use of their services. They will not share any of that information with us. However, if you are one of such ‘look like’ users of the third party advertising provider, and come to our website/app by clicking on our advertisement on that provider’s platform</span><span style="font-weight: 400;"></span><span style="font-weight: 400;">, we will know that you came to us that way.</span></p>
+                    <p><span style="font-weight: 400;">We will share information with third party advertising providers </span><span style="font-weight: 400;"></span><span style="font-weight: 400;">for the above purposes only if you consent to our sharing of your personal data with third parties for advertising purposes on third party platforms. Typically, consent would be gathered using a cookie pop-up.</span></p>
+                    <p><span style="font-weight: 400;"><strong>Right to withdraw consent or to object to processing</strong></span><span style="font-weight: 400;"> </span></p>
+                    <p><span style="font-weight: 400;">Even if we are not required to obtain your consent for marketing purposes, you can always ask us to stop using your personal information for marketing purposes, so you are still in control. You can do that by:</span></p>
+                    <ul style="padding-left: 20px;">
+                        <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">emailing us at </span><a href="mailto:milkman@themodernmilkman.co.uk"><span style="font-weight: 400;">milkman@themodernmilkman.co.uk</span></a><span style="font-weight: 400;">;&nbsp;</span></li>
+                        <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">by changing your marketing preferences within your account on our website or app;</span></li>
+                        <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">in case of marketing emails, by using the ‘unsubscribe’ link in our marketing emails; or</span></li>
+                        <div id="g1"></div>
+                        <li style="font-weight: 400;list-style-type: disc;"><span style="font-weight: 400;">in case of cookies, by using the cookie preferences settings on our website, which are accessible on the cookie icon at the button of the page and press show details. &nbsp;</span></li>
+                    </ul>
+                    
+                    <p><span style="font-weight: 400;">We may ask you to confirm or update your marketing preferences if you instruct us to provide further services in the future, or if there are changes in the law, regulation, or structure of our business.</span></p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Who we share personal data with</h4>
+                    <p><span style="font-weight: 400;">We may share your information with third parties for the purposes set out in this notice.&nbsp;</span></p>
+                    <p><span style="font-weight: 400;">If you are our registered user, we share your personal data with the delivery team servicing your area.</span></p>
+                    <p><span style="font-weight: 400;">We share data with providers of cloud-based tools and services, which we use to operate our business, for example, providers of website hosting services</span><span style="font-weight: 400;"></span><span style="font-weight: 400;">, website and app analytics services, customer email services, digital marketing and geo-fencing services, and social media advertising services. We impose contractual obligations on the above providers to ensure that your personal data is protected.</span></p>
+                    <p><span style="font-weight: 400;">We also use Stripe, a payment gateway, to process payments through our website and app. If you pay for our products through our website and our app, you will be providing your personal data (for example, details of your payment card and billing address) to Stripe. </span></p>
+                    <p><span style="font-weight: 400;"><strong>International data transfers</strong></span></p>
+                    <p><span style="font-weight: 400;">Transfers of data outside the UK or the European Economic Area (</span><strong>EEA</strong><span style="font-weight: 400;">) are subject to special rules under the Data Protection Legislation. Those of our contractors and suppliers who are based outside the EEA, are either: based in countries that have been identified by the European Commission as providing adequate protection, or have in place an appropriate data sharing safeguard mechanism, such as standard contractual clauses.</span></p>
+                    <p><span style="font-weight: 400;"><strong>Other sharing</strong></span></p>
+                    <p><span style="font-weight: 400;">We may also:</span></p>
+                    <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">disclose your personal data to professional advisers (e.g. lawyers, accountants, auditors or insurers) who provide professional services to us;</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">disclose your personal data to certain third parties if specifically requested or agreed with you (e.g. if you ask us to introduce you to a third party);</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">disclose and exchange certain information with law enforcement agencies and regulatory bodies to comply with our legal obligations; and</span></li>
+                        <div id="h1"></div>
+                    </ul>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">How long we keep personal data</h4>
+                    <p><span style="font-weight: 400;">We will only retain your personal data for as long as reasonably necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, regulatory, tax, accounting or reporting requirements. We may retain your personal data for a longer period in the event of a complaint or if we reasonably believe there is a prospect of litigation in respect to our relationship with you.</span></p>
+                    <p><span style="font-weight: 400;">To determine the appropriate retention period for personal data, we consider the amount, nature and sensitivity of the personal data, the potential risk of harm from unauthorised use or disclosure of your personal data, the purposes for which we process your personal data and whether we can achieve those purposes through other means, the limitation period for the making of- or defending against claims, and the applicable legal, regulatory, tax, accounting or other requirements.</span></p>
+                    <p><span style="font-weight: 400;">For example:</span></p>
+                    <ul>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">if you sign up to create Modern Milkman account, we may keep your data for six years after you cease being our customer; and</span></li>
+                        <li style="font-weight: 400;"><span style="font-weight: 400;">if you subscribe to our updates or consent to receiving marketing communications, we will hold your data for that purpose until you unsubscribe or otherwise tell us that you no longer wish to receive such communications.</span></li>
+                        <div id="i1"></div>
+                    </ul>
+                    <p><span style="font-weight: 400;">We may also anonymise your personal data (so that it can no longer be associated with you) for analytics, research or statistical purposes, in which case we may use this information indefinitely without further notice to you.&nbsp;</span></p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Your rights</h4>
+                    <p><span style="font-weight: 400;">You have a number of rights in relation to your personal data, which allow you to access and control your information in certain circumstances. You can exercise these rights free of charge, unless your request is manifestly unfounded or excessive (in which case we may charge a reasonable administrative fee or refuse to respond to such request).</span></p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><strong>Your right</strong></p>
+                                </td>
+                                <td>
+                                    <p><strong>Explanation</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Access</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Rectification</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">The right to require us to correct any inaccuracies in your personal data.</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Erasure (to be forgotten)</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">The right to require us to delete your personal data in certain situations.</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Restriction of processing</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">The right to require us to restrict processing of your personal data in certain circumstances (e.g. if you contest the accuracy of the data we hold).</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Data portability</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">The right to receive, in certain situations, the personal data you provided to us, in a structured, commonly used and machine-readable format and/or transmit that data to a third party.</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">To object</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">The right to object at any time to your personal data being processed for direct marketing (including profiling) or, in certain other situations, to our continued processing of your personal data (e.g. processing carried out for the purpose of our legitimate interests).</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-weight: 400;">Not to be subject to automated individual decision-making</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-weight: 400;">The right not to be subject to a decision based solely on automated processing (including profiling) that produces legal effects concerning you, or similarly significantly affects you.</span></p>
+                                    <div id="j1"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+                    <p><span style="font-weight: 400;">If you would like to exercise any of those rights, please contact us at&nbsp;</span><a href="mailto:dpo@aphaia.co.uk"><span style="font-weight: 400;">dpo@aphaia.co.uk</span></a><span style="font-weight: 400;">. Please let us know what right you want to exercise and the information to which your request relates.&nbsp;</span></p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Keeping personal data secure</h4>
+                    <p><span style="font-weight: 400;">We have appropriate security measures to prevent personal data from being accidentally lost, or used or accessed unlawfully. We limit access to your personal data to those who have a genuine business need to access it. Those processing your information will do so only in an authorised manner and are subject to a duty of confidentiality.</span></p>
+                    <div id="k1"></div>
+                    <p><span style="font-weight: 400;">We also have procedures in place to deal with any suspected data security breach. We will notify you and any applicable regulator of a suspected data security breach where we are legally required to do so.</span></p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Complaints</h4>
+                    <p><span style="font-weight: 400;">We hope that we can resolve any query or concern you may raise about our use of your information. You may contact us by using the contact methods set out in the Who we are and how to contact us section of this notice.</span></p>
+                    <div id="l1"></div>
+                    <p><span style="font-weight: 400;">The Data Protection Legislation also gives you a right to lodge a complaint with a supervisory authority. The supervisory authority in the UK is the Information Commissioner, who may be contacted at </span><a href="https://ico.org.uk/concerns"><span style="font-weight: 400;">https://ico.org.uk/concerns</span></a><span style="font-weight: 400;">, telephone on 0303 123 1113, or by post to: Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF. We would, however, appreciate the chance to deal with your concerns before you approach the Information Commissioner’s Office, so please contact us in the first instance. You can contact our Data Protection Officer directly at dpo@aphaia.co.uk &nbsp;</span></p>
+                    <p><a href="#top"><span style="font-weight: 400;">Back to Contents</span></a></p>
+                    <p style="margin-bottom:0px;">&nbsp;</p>
+                    <h4 class="global">Changes to this privacy notice</h4>
+                    <p><span style="font-weight: 400;">This privacy notice was last updated on 23</span><span style="font-weight: 400;">rd</span><span style="font-weight: 400;"> April 2021.</span></p>
+                    <p><span style="font-weight: 400;">We may change this privacy notice from time to time, when we do we will publish the new version of the notice on our website and on our app. We may also inform you via email. </span></p>
+                        <h1>D2MS Privacy Notice</h1>
+
+                        <p>We are BLUE ORANGE LIMITED. We’re a company registered in England and Wales with company number 11179221, whose registered
+                            address is at A And L, Suite 1-3 Hop Exchange Southwark Street, London, England, SE1 1TY. In this privacy notice, we will refer to
+                            ourselves as ‘we’, ‘us’ or ‘our’. We are the Data Controller of the personal information we collect, hold and use about you, as explained in
+                            this notice.
+                            You can get hold of us in any of the following ways:
+                            a. by phoning us on 07377463798;
+                            b. by emailing us at iain@d2ms.co.uk; or
+                            c. by writing to us at A And L, Suite 1-3 Hop Exchange Southwark Street, London, England, SE1 1TY.
+                            We take the privacy, including the security, of personal information we hold about you seriously. This privacy notice is designed to inform
+                            you about how we collect personal information about you and how we use that personal information. You should read this privacy notice
+                            carefully so that you know and can understand why and how we use the personal information we collect and hold about you.
+                            We have appointed Iain Reid as our data protection officer. You can contact them using the details set out above.
+                            We may issue you with other privacy notices from time to time, including when we collect personal information from you. This privacy
+                            notice is intended to supplement these and does not override them.
+                            We may update this privacy notice from time to time. This version was last updated on 15 November 2021.
+                            Key definitions
+                            The key terms that we use throughout this privacy notice are defined below, for ease:
+                            Data Controller: under UK data protection law, this is the organisation or person responsible for deciding how personal information is
+                            collected and stored and how it is used.
+                            Data Processor: a Data Controller may appoint another organisation or person to carry out certain tasks in relation to the personal
+                            information on behalf of, and on the written instructions of, the Data Controller. (This might be the hosting of a site containing personal
+                            data, for example, or providing an email-marketing service that facilitates mass distribution of marketing material to a Data Controller’s
+                            customer base.)
+                            Personal Information: in this privacy notice, we refer to your personal data as ‘personal information’. ‘Personal information’ means any
+                            information from which a living individual can be identified. It does not apply to information that has been anonymised.
+                            Special Information – certain very sensitive personal information requires extra protection under data protection law. Sensitive data
+                            includes information relating to health, racial and ethnic origin, political opinions, religious and similar beliefs, trade union membership,
+                            sex life and sexual orientation and also includes genetic information and biometric information.
+                            Details of personal information that we collect and hold about you
+                            Set out below are the general categories and details of retention periods in relation to those categories (see section 8 below for more
+                            details about retention) and in each case the types of personal information that we collect, use and hold about you:
+                            General
+                            Category
+                            
+                            Types of Personal Data in that category Retention
+                            Periods
+                            
+                            Identity
+                            information
+                            
+                            This is information relating to your identity such as your name (including any previous names and any titles that you use),
+                            gender, marital status and date of birth
+                            
+                            60
+                            months
+                            
+                            Contact
+                            information
+                            
+                            This is information relating to your contact details such as email address, addresses, telephone numbers 60 month
+                            
+                            1.
+                            1.1.
+                            1.2.
+                            1.3.
+                            
+                            1.4.
+                            1.5.
+                            
+                            2.
+                            2.1.
+                            
+                            Transaction
+                            information
+                            
+                            This is information relating to transactions between us such as details of the goods, services and/or digital content
+                            provided to you and any returns details
+                            
+                            60
+                            Months
+                            
+                            Survey
+                            information
+                            
+                            This is information that we have collected from you or that you have provided to us in respect of surveys and feedback 60
+                            Months
+                            
+                            Marketing
+                            information
+                            
+                            This is information relating to your marketing and communications preferences 60
+                            Months
+                            
+                            Website,
+                            Device and
+                            Technical
+                            Information
+                            
+                            This is information about your use of our website and technical data which we collect (including your IP address, the type
+                            of browser you are using and the version, the operating system you are using, details about the time zone and location
+                            settings on the device and other information we receive about your device)
+                            
+                            60
+                            Months
+                            
+                            Call
+                            Recordings
+                            
+                            This is telephone conversations of any nature between us, which may be used from time to time for the purposes of
+                            Quality Assurance, Training or Monitoring.
+                            
+                            60
+                            Months
+                            The types of personal data we collect about you may differ from person to person, depending on who you are and the relationship
+                            between us.
+                            Details of special information that we collect and hold about you
+                            Special information is explained in section 1 above. We do not collect or hold any special information about you.
+                            We do not collect information from you relating to criminal convictions or offences.
+                            Details of how and why we use personal information
+                            We are only able to use your personal information for certain legal reasons set out in data protection law. There are legal reasons under
+                            data protection law other than those listed below; but, in most cases, we will use your personal information for the following legal reasons:
+                            a. Contract Reason: this is in order to perform our obligations to you under a contract we have entered into with you;
+                            b. Legitimate Interests Reason: this is where the use of your personal information is necessary for our (or a third party’s) legitimate
+                            interests, so long as that legitimate interest does not override your fundamental rights, freedoms or interests;
+                            c. Legal Obligation Reason: this is where we have to use your personal information in order to perform a legal obligation by which we are
+                            bound; and
+                            d. Consent Reason: this is where you have given us your consent to use your personal information for a specific reason or specific
+                            reasons.
+                            As explained in section 3 above, there are more sensitive types of personal data, which require higher levels of protection. Where we
+                            process such sensitive types of personal data, we will usually do this in the following circumstances:
+                            a. We have your explicit consent;
+                            b. Where it is necessary in relation to legal claims;
+                            c. Where you have made the personal data public.
+                            So that we are able to provide you with goods and services, we will need your personal information. If you do not provide us with the
+                            required personal information, we may be prevented from supplying the goods and services to you.
+                            It is important that you keep your personal information up to date. If any of your personal information changes, please contact us as soon
+                            as possible to let us know. If you do not do this, then we may be prevented from supplying the goods and services to you.
+                            Where we rely on consent for a specific purpose as the legal reason for processing your personal information, you have the right under
+                            data protection law to withdraw your consent at any time. If you do wish to withdraw your consent, please contact us using the details set
+                            out at the beginning of this notice. If we receive a request from you withdrawing your consent to a specific purpose, we will stop
+                            processing your personal information for that purpose, unless we have another legal reason for processing your personal information – in
+                            which case, we will confirm that reason to you.
+                            We have explained below the different purposes for which we use your personal information and, in each case, the legal reason(s)
+                            allowing us to use your personal information. Please also note the following:
+                            a. if we use the Legitimate Interests Reason as the legal reason for which we can use your personal information, we have also explained
+                            what that legitimate interest is; and
+                            b. for some of the purposes, we may have listed more than one legal reason on which we can use your personal information, because the
+                            legal reason may be different in different circumstances. If you need confirmation of the specific legal reason that we are relying on to use
+                            your personal data for that purpose, please contact us using the contact details set out at the start of this privacy notice.
+                            2.2.
+                            3.
+                            3.1.
+                            3.2.
+                            4.
+                            4.1.
+                            
+                            4.2.
+                            
+                            4.3.
+                            4.4.
+                            4.5.
+                            
+                            4.6.
+                            
+                            Purpose Legal Reason(s) for using the personal information
+                            To enrol you as a customer Contract Reason
+                            
+                            Legitimate Interests Reason (in order to [offer you other goods,
+                            services and/or digital content which helps us to develop our
+                            business)
+                            To process your order, which includes taking payment from you, advising you of
+                            any updates in relation to your order or any enforcement action against you to
+                            recover payment
+                            
+                            Contract Reason
+                            Legitimate Interests Reason (in order to [recover money that you owe
+                            us])
+                            To manage our contract with you and to notify you of any changes Contract Reason
+                            Legal Obligation Reason
+                            To comply with audit and accounting matters Legal Obligation Reason
+                            
+                            To improve the goods, services, and/or digital content that we supply Legitimate Interests Reason (in order to improve the goods, services,
+                            and/or digital content for future customers and to grow our business)
+                            
+                            To recommend and send communications to you about goods, services, and/or
+                            digital content that you may be interested in. More details about marketing are set
+                            out in section 11 below
+                            
+                            Legitimate Interests Reason (in order to grow our business
+                            Consent Reason
+                            
+                            To understand how customers and visitors to our website use the website and
+                            interact with it via data analysis
+                            
+                            Legitimate Interests Reason (to improve and grow our business,
+                            including our website, and to understand our customer’s needs,
+                            desires and requirements)
+                            
+                            Sometimes we may anonymise personal information so that you can no longer be identified from it and use this for our own purposes. In
+                            addition, sometimes we may use some of your personal information together with other people’s personal information to give us statistical
+                            information for our own purposes. Because this is grouped together with other personal information and you are not identifiable from that
+                            combined data we are able to use this.
+                            Under data protection laws, we can only use your personal information for the purposes we have told you about, unless we consider that
+                            the new purpose is compatible with the purpose(s) we told you about. If we want to use your personal information for a different purpose
+                            that we do not think is compatible with the purpose(s) we told you about, then we will contact you to explain this and what legal reason is
+                            in place to allow us to do this.
+                            Details of how we collect personal information and special information
+                            We usually collect Identity Information, Contact Information, Transaction Information, Survey Information, Marketing Information, directly
+                            from you when you fill out a form, survey or questionnaire, purchase goods, services and/or digital content from us, contact us by email,
+                            telephone, in writing or otherwise. This includes the personal information that you provide to us when you subscribe to our mailing list
+                            and/or enter a competition or survey.
+                            We may receive some of your personal information from third parties or publicly available sources. This includes:
+                            a. Contact Information and Payment Information from our selected third-party suppliers, such as Social Blue or Loud Mouth ;
+                            b. Identity Information and Contact Information from selected data brokers such as INSERT NAME OF DATA BROKERS;
+                            c. Identity Information and Contact Information from publicly available sources such as Companies House Facebook, Instagram, Google;
+                            d. Website, Device and Technical Information from third parties such as analytics providers (like Google);
+                            e. ANY OTHER METHODS BY WHICH YOU COLLECT PERSONAL DATA
+                            We may also receive Website, Device and Technical Information automatically from technologies such as cookies that are installed on our
+                            website. To find out more about these please see our cookie policy, which is available at D2MS.co.uk.
+                            Details about who personal Information may be shared with
+                            We may need to share your personal information with other organisations or people. These organisations include:
+                            a. Third parties who are not part of our group. These may include:
+                            i. Suppliers: such as IT support services, payment providers, administration providers, marketing agencies, who are based in The UK and
+                            EU;
+                            ii. Government bodies and regulatory bodies: such as HMRC, fraud prevention agencies, who are based in The UK and EU;
+                            4.7.
+                            
+                            4.8.
+                            
+                            5.
+                            5.1.
+                            
+                            5.2.
+                            
+                            5.3.
+                            6.
+                            6.1.
+                            
+                            iii. Our advisors: such as lawyers, accountants, auditors, insurance companies who are based in The UK and EU;
+                            iv. Our bankers who are based in The UK and EU;
+                            v. Credit Reference Agencies who are based in The UK and EU;
+                            vi. Email platforms who are based in The UK and EU;
+                            b. any organisations that propose to purchase our business and assets, in which case we may disclose your personal information to the
+                            potential purchaser.
+                            Depending on the circumstances, the organisations or people who we share your personal information with will be acting as either Data
+                            Processors or Data Controllers. Where we share your personal information with a Data Processor, we will ensure that we have in place
+                            contracts that set out the responsibilities and obligations of us and them, including in respect of security of personal information.
+                            We do not sell or trade any of the personal information that you have provided to us.
+                            Details about transfers to countries outside of the EEA
+                            We do not transfer your personal information outside of the EEA.
+                            Details about how long we will hold your personal information
+                            We will only hold your personal data for as long as is necessary. How long is necessary will depend upon the purposes for which we
+                            collected the personal information (see section 4 above) and whether we are under any legal obligation to keep the personal information
+                            (such as in relation to accounting or auditing records or for tax reasons). We may also need to keep personal information in case of any
+                            legal claims
+                            You can contact us (using the details at the beginning of this notice) to request a copy of our retention policy, which sets out how long
+                            different types of personal data will be kept for.
+                            Your rights under data protection law
+                            Under data protection laws, you have certain rights in relation to your personal information, as follows:
+                            a. Right to request access: (this is often called ‘subject access’). This is the right to obtain from us a copy of the personal information that
+                            we hold about you. We must also provide you with certain other information in response to these requests to help you understand how
+                            your personal information is being used.
+                            b. Right to correction: this is the right to request that any incorrect personal data is corrected and that any incomplete personal data is
+                            completed.
+                            c. Right to erasure: (this is often called the 'right to be forgotten').This right only applies in certain circumstances. Where it does apply, you
+                            have the right to request us to erase all of your personal information.
+                            d. Right to restrict processing: this right only applies in certain circumstances. Where it does apply, you have the right to request us to
+                            restrict the processing of your personal information.
+                            e. Right to data portability: this right allows you to request us to transfer your personal information to someone else.
+                            f. Right to object: you have the right to object to us processing your personal information for direct marketing purposes. You also have the
+                            right to object to us processing personal information where our legal reason for doing so is the Legitimate Interests Reason (see section 4
+                            above) and there is something about your particular situation that means that you want to object to us processing your personal
+                            information. In certain circumstances, you have the right to object to processing where such processing consists of profiling (including
+                            profiling for direct marketing).
+                            In addition to the rights set out in section 9.1, where we rely on consent as the legal reason for using your personal information, you have
+                            the right to withdraw your consent. Further details about this are set out in section 4.5.
+                            If you want to exercise any of the above rights in relation to your personal information, please contact us using the details set out at the
+                            beginning of this notice. If you do make a request, then please note:
+                            a. we may need certain information from you so that we can verify your identity;
+                            b. we do not charge a fee for exercising your rights unless your request is unfounded or excessive; and
+                            c. if your request is unfounded or excessive, then we may refuse to deal with your request.
+                            Marketing
+                            You may receive marketing from us about similar goods and services, where either you have consented to this, or we have another legal
+                            reason by which we can contact you for marketing purposes.
+                            However, we will give you the opportunity to manage how or if we market to you. In any email that we send to you, we provide a link to
+                            either unsubscribe or opt out, or to change your marketing preferences. To change your marketing preferences, and/or to request that we
+                            stop processing your personal information for marketing purposes, you can always contact us on the details set out at the beginning of
+                            this notice.
+                            If you do request that we stop marketing to you, this will not prevent us from sending communications to you that are not to do with
+                            marketing (for example in relation to goods and services that you have purchased from us).
+                            6.2.
+                            
+                            6.3.
+                            7.
+                            7.1.
+                            8.
+                            8.1.
+                            
+                            8.2.
+                            9.
+                            9.1.
+                            
+                            9.2.
+                            9.3.
+                            
+                            10.
+                            10.1.
+                            10.2.
+                            
+                            10.3.
+                            
+                            We do not pass your personal information on to any third parties for marketing purposes.
+                            Complaints
+                            If you are unhappy about the way that we have handled or used your personal information, you have the right to complain to the UK
+                            supervisory authority for data protection, which is the Information Commissioner’s Office (ICO). Please do contact us in the first instance if
+                            you wish to raise any queries or make a complaint in respect of our handling or use of your personal information, so that we have the
+                            opportunity to discuss this with you and to take steps to resolve the position. You can contact us using the details set out at the beginning
+                            of this privacy notice.
+                            Third-party websites
+                            Our website may contain links to third-party websites. If you click and follow those links, then these will take you to the third-party website.
+                            Those third-party websites may collect personal information from you and you will need to check their privacy notices to understand how
+                            your personal information is collected and used by them.</p>
+                    
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    <!-- Subscribe-Form-Area -->
-    <!-- Footer-Area -->
-    <!-- <footer class="footer-area" id="contact_page">
-        <div class="section-padding">
 
         </div>
+        </div>
+    </div>
 
-    </footer> -->
-    <!-- Footer-Area-End -->
     <!--Vendor-JS-->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/jquery-ui.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d77c34bcc9.js" crossorigin="anonymous"></script>
     <!--Plugin-JS-->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/contact-form.js"></script>

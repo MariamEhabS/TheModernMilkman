@@ -68,15 +68,15 @@
     /*---------------------------
     MICHIMP INTEGRATION
     -----------------------------*/
-    $('#mc-form').ajaxChimp({
-        url: 'https://quomodosoft.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
-        callback: function (resp) {
-            if (resp.result === 'success') {
-                $('.subscrie-form, .join-button').fadeOut();
-                $('body').css('overflow-y', 'scroll');
-            }
-        }
-    });
+    // $('#mc-form').ajaxChimp({
+    //     url: 'https://quomodosoft.us14.list-manage.com/subscribe/post?u=b2a3f199e321346f8785d48fb&amp;id=d0323b0697', //Set Your Mailchamp URL
+    //     callback: function (resp) {
+    //         if (resp.result === 'success') {
+    //             $('.subscrie-form, .join-button').fadeOut();
+    //             $('body').css('overflow-y', 'scroll');
+    //         }
+    //     }
+    // });
 
     /*-- Smoth-Scroll --*/
     $('.mainmenu-area a[href*="#"]')
@@ -188,7 +188,7 @@ function surveryStarter() {
     document.querySelector('.imgSection').style.display = 'none'
     document.querySelector('.footPart').style.display = 'none'  
     document.querySelector('.interestedSect').style.display = 'none'  
-}
+    }
 
 function dietOptions() {
 	q1.style.display = 'none'
@@ -205,10 +205,19 @@ function postalChecker(){
 	q4.style.display = 'block'
     q4.style.animation = 'fadeIn 1s'
 	submitBtn.style.display = 'inline-block'
+    
 }
 
-
+// ["click", "keypress"].forEach(ev=>{
+//     postCodeCheck.addEventListener(ev, handleEvent);
+//   });
 postCodeCheck.addEventListener("click", is_ukPostCode)
+input.addEventListener("keydown", (e)=> {
+    if (e.keyCode ==13){
+            return is_ukPostCode()
+        }
+    }
+)
 
 function is_ukPostCode(){
     fetch("./postcodes.json")
@@ -226,19 +235,76 @@ function is_ukPostCode(){
 			document.getElementById('postCode').style.border = '2px solid green'
 			document.querySelector('.fas.fa-check-circle').style.display = 'inline'
 			document.querySelector('.fas.fa-times-circle').style.display = 'none'
+
 			postCodeCheck.style.display = 'none'
 			setInterval(postalChecker, 1000)
-
 		}
         else
           {
 			document.getElementById('postCode').style.border = '2px solid red'
 			document.querySelector('.fas.fa-times-circle').style.display = 'inline'
-
           }
         })
 }
 
+function phone_number(){
+	const phoneInp = document.getElementById('phone')
+	const numInput = phoneInp.value.replaceAll(' ', '')
+
+	phonNumVal = /^(?:(?:00)?44|0)7(?:[45789]\d{2}|624)\d{6}$/;
+	
+	if(phonNumVal.test(numInput) && numInput != '07777777777'){
+		console.log(('THERES A MATCH'), numInput)
+		document.getElementById('phoneNumInval').style.display = 'none'
+		phoneInp.style.border = '2px solid green'
+		submitBtn.style.background = '#73ebd1'
+		submitBtn.style.border = '0.3rem solid #73ebd1'
+        submitBtn.style.color = '#3e5367'
+		submitBtn.disabled = false
+	}else if(numInput.length === 10 && numInput.split('').at(0) == '7' && numInput != '7777777777'){
+		console.log(('THERES ANOTHER MATCH'), numInput.length)
+		document.getElementById('phoneNumInval').style.display = 'none'
+		phoneInp.style.border = '2px solid green'
+		submitBtn.style.background = '#73ebd1'
+		submitBtn.style.border = '0.3rem solid #73ebd1'
+        submitBtn.style.color = '#3e5367'
+		submitBtn.disabled = false
+	}else{
+		document.getElementById('phoneNumInval').style.display = 'block'
+		console.log(('NOPE'), numInput);
+		phoneInp.style.border = '2px solid rgb(122 0 0)'
+		submitBtn.disabled = true
+		submitBtn.style.background = '#A8AEB5'
+		submitBtn.style.border = '0.3rem solid #A8AEB5'
+        submitBtn.style.color = '#73ebd1'
+	}
+}
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 myForm.addEventListener('submit', ()=>{
 	submitBtn.setAttribute('disabled', 'disabled')
