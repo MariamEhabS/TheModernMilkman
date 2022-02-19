@@ -133,19 +133,20 @@
                                     <input name="Name" type="text" id="firstName" placeholder="First Name">
                                     <input name="Name2" type="text" id="lastName" placeholder="Last Name" required>
                                     <input name="email" type="email" id="email" placeholder="Email" required>
-                                    <input name="PhoneNum" type="tel" id="phone" placeholder="Phone Number" required>
+                                    <input name="PhoneNum" type="tel" id="phone" placeholder="Mobile ex.07XXXXXXXXX" onblur="phone_number()" required>
+                                    <span id="phoneNumInval">Invalid phone number. Please enter one of the following formats: 07XXXXXXXXX, 7XXXXXXXXX, 447XXXXXXXXX </span>
+
                                     <div class="checkBoxForm">                    
                                        
                                         <label for="contactMe" class="checking">
                                             <input required name="contactMe" id="contactMe" type="checkbox" class="checkBox">
                                             Yes, The Modern Milkman may contact me via phone.
-                                        </label>
-                                        
+                                        </label>  
                                         <label for="newsL" class="checking"> <input name="newsL"  id="newsL" type="checkbox" class="checkBox">Yes, I'd like to receive The Modern Milkman newsletter (optional).</label>
                                  </div>
                                 </div>
                                 </div>
-                                <button type="submit" id="submitButton"> <a href="/css/thankyou.html"></a>Submit</button>
+                                <button type="submit" id="submitButton" disabled><a href="/css/thankyou.html"></a>Submit</button>
                                 <!-- <button type="submit" id="submitButton">Submit</button> -->
                         </form>
     

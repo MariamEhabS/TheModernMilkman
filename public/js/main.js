@@ -238,17 +238,47 @@ function is_ukPostCode(){
 
 			postCodeCheck.style.display = 'none'
 			setInterval(postalChecker, 1000)
-
 		}
         else
           {
 			document.getElementById('postCode').style.border = '2px solid red'
 			document.querySelector('.fas.fa-times-circle').style.display = 'inline'
-
           }
         })
 }
 
+function phone_number(){
+	const phoneInp = document.getElementById('phone')
+	const numInput = phoneInp.value.replaceAll(' ', '')
+
+	phonNumVal = /^(?:(?:00)?44|0)7(?:[45789]\d{2}|624)\d{6}$/;
+	
+	if(phonNumVal.test(numInput) && numInput != '07777777777'){
+		console.log(('THERES A MATCH'), numInput)
+		document.getElementById('phoneNumInval').style.display = 'none'
+		phoneInp.style.border = '2px solid green'
+		submitBtn.style.background = '#73ebd1'
+		submitBtn.style.border = '0.3rem solid #73ebd1'
+        submitBtn.style.color = '#3e5367'
+		submitBtn.disabled = false
+	}else if(numInput.length === 10 && numInput.split('').at(0) == '7' && numInput != '7777777777'){
+		console.log(('THERES ANOTHER MATCH'), numInput.length)
+		document.getElementById('phoneNumInval').style.display = 'none'
+		phoneInp.style.border = '2px solid green'
+		submitBtn.style.background = '#73ebd1'
+		submitBtn.style.border = '0.3rem solid #73ebd1'
+        submitBtn.style.color = '#3e5367'
+		submitBtn.disabled = false
+	}else{
+		document.getElementById('phoneNumInval').style.display = 'block'
+		console.log(('NOPE'), numInput);
+		phoneInp.style.border = '2px solid rgb(122 0 0)'
+		submitBtn.disabled = true
+		submitBtn.style.background = '#A8AEB5'
+		submitBtn.style.border = '0.3rem solid #A8AEB5'
+        submitBtn.style.color = '#73ebd1'
+	}
+}
 
 // Get the modal
 var modal = document.getElementById("myModal");

@@ -817,6 +817,10 @@ input:-webkit-autofill:focus {
    display: none;
    color:#202121;  
  }
+ #phoneNumInval{
+     display: none;
+     color: rgb(122 0 0);
+ }
 
  .optionSections{
     display: flex;
